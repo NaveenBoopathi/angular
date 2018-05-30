@@ -1,0 +1,69 @@
+.modal {
+  background-color: #000;
+  opacity: 0.9 !important;
+}
+
+.modal-content {
+  width: 450px;
+  margin: 50% auto;
+}
+
+#triggerSignup {
+  display: none;
+}
+
+.signup-heading {
+  height: 34px;
+  color: #46535e;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+input[type='text'] {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.forgot-password {
+  float: right;
+  font-size: 12px;
+}
+
+#signupButton {
+  display: block;
+  clear: both;
+  margin: auto;
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+}
+
+input {
+  height: 40px;
+}
+
+p {
+  color: #46535e;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form-group {
+  padding: 0px 15px;
+}
+
+.closeBtn {
+  background: none !important;
+  position: absolute;
+  top: -18px !important;
+  right: -18px !important;
+  color: #9ca3a8;
+  line-height: 0;
+  opacity: 0.9;
+}
+
+.error {
+  color: #b11616;
+  font-size: 0.9em;
+  margin-top: 5px;
+}

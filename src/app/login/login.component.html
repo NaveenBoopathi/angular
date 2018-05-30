@@ -1,0 +1,43 @@
+<button id="triggerLogin" data-toggle="modal" data-target="#loginModal" data-backdrop="static" data-keyboard="false">Trigger Modal</button>
+
+<div id="loginModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" id="closeBtn" class="close closeBtn" data-dismiss="modal" aria-label="Close" routerLink="/home">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </button>
+      <div class="modal-body">
+        <h3 class="modal-title login-heading align-center">Log in</h3>
+        <form class="form form-horizontal" #loginForm="ngForm">
+          <div class="error" *ngIf="error" style="margin-bottom: 5px">
+            <span>
+              &nbsp;Wrong email and/or password.
+            </span>
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="login.email" #email="ngModel"
+              required (focus)="error=false" autocomplete="off" minlength="8">
+            <div class="error" *ngIf="email.touched && !email.valid">Email is required.</div>
+          </div>
+
+          <div class="form-group">
+            <input type="password" name="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="login.password"
+              required #password="ngModel" (focus)="error=false">
+            <div class="error" *ngIf="password.touched && !password.valid">Password is required.</div>
+          </div>
+
+          <a class="forgot-password" href="#">Forgot Password?</a>
+          <div class="form-group">
+            <button id="loginButton" type="submit" class="btn btn-primary btn-block" (click)="onLogin()" [disabled]="!loginForm.form.valid">Log in
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+            </button>
+          </div>
+        </form>
+        <br/>
+        <p class="align-center">Don't have an account?
+          <a routerLink="/signup" data-dismiss="modal">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
