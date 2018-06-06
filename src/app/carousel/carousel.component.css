@@ -1,0 +1,35 @@
+.img1 {
+  background: url(../../assets/img/apple-event.jpg) no-repeat center center
+    fixed;
+}
+.img2 {
+  background: url(../../assets/img/7in7-home.jpg) no-repeat center center fixed;
+}
+.img3 {
+  background: url(../../assets/img/engage-slider-image-1600x550.jpg) no-repeat
+    center center fixed;
+}
+.img4 {
+  background: url(../../assets/img/events.jpg) no-repeat center center fixed;
+}
+.img5 {
+  background: url(../../assets/img/HD-Ballroom.jpg) no-repeat center center
+    fixed;
+}
+.img6 {
+  background: url(../../assets/img/what-to-wear-to-a-conference-or-events.jpg)
+    no-repeat center center fixed;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#myCarousel {
+  width: 100%;
+}
