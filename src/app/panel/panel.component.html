@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading img" [style.background-image]="event.imageURL">
+  </div>
+  <div class="panel-body">
+    <div class="mainHeading">{{event.tags[0]}}</div>
+    <div class="panel-title">{{event.title}}</div>
+    <p>Start Date:
+      <span class="startDate">{{event.startDate}}</span>
+    </p>
+    <button type="button" class="btn btn-primary btn-block" role="button" (click)="openPopover($event.currentTarget)" data-toggle="popover">View Details</button>
+    <a class="btn btn-default btn-block" href="{{event.externalLink}}">Register</a>
+  </div>
+</div>
